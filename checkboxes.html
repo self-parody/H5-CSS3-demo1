@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font_rwj98vsi91o/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom right,#C268FD,#5585FF);
+        }
+        ul{
+            background: linear-gradient(to bottom right,#C268FD,#5585FF);         
+            margin: 100px auto;
+            list-style: none;
+            width: 400px;
+            height: 500px;
+            border-radius: 50px;
+            box-shadow: 8px 8px 16px #4C6AFF,-8px -8px 16px #D97EFF;
+            padding: 25px 50px;
+            box-sizing: border-box;                               
+        }
+        ul li{
+            float: left;
+            margin:25px;
+            width: 100px;
+            height: 100px;       
+        }
+        ul li:nth-last-of-type(-n+2) label span{
+            box-shadow:inset -3px -3px 6px #4C6AFF,inset 3px 3px 6px #D97EFF;
+        }
+        ul li label{
+            position: relative;
+        }
+        ul li label input{
+            position:absolute;
+            opacity: 0;
+        }
+        
+        ul li label span{
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;     
+            border-radius: 20px;
+            background: linear-gradient(to bottom right,#C268FD,#5585FF);
+            box-shadow: 3px 3px 6px #4C6AFF,-3px -3px 6px #D97EFF;
+            color: rgb(230, 200, 250);
+        }
+        .iconfont{
+            font-size: 30px;
+        }
+        ul li label input:checked + span{
+            box-shadow:inset 3px 3px 6px #4C6AFF,inset -3px -3px 6px #D97EFF;
+        }
+        ul li:nth-last-of-type(-n+2) label input:checked + span{
+            box-shadow:-3px -3px 6px #4C6AFF,3px 3px 6px #D97EFF;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <label>
+                <input type="checkbox" name="">
+                <span class="iconfont icon-001-mailinboxapp"></span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="">
+                <span class="iconfont icon-003-telephone"></span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="">
+                <span class="iconfont icon-002-speechbubble"></span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="">
+                <span class="iconfont icon-004-camera"></span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="">
+                <span class="iconfont icon-005-image"></span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="">
+                <span class="iconfont icon-006-weatherapp"></span>
+            </label>
+        </li>
+    </ul>
+</body>
+</html>
